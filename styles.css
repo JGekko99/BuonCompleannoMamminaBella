@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, #69b7eb 0%, #b3dbd3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Photo Container */
+.photo-container {
+    margin-bottom: 30px;
+}
+
+.photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Heading */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Message */
+.message {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+    color: #e0f7fa;
+    text-align: justify;
+    text-indent: 50px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Closing */
+.closing {
+    font-size: 1.3em;
+    line-height: 1.8em;
+    color: #e0f7fa;
+    text-align: right;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Signature */
+.signature {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+/* Button */
+button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background: #0288d1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+button:hover {
+    background: #26c6da;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Media Query */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .message, .closing {
+        font-size: 1.1em;
+        text-indent: 30px;
+    }
+    .card {
+        padding: 30px 20px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .photo {
+        max-width: 200px;
+    }
+}
